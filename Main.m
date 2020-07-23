@@ -14,7 +14,7 @@
 % T:     Maximum number of generations
 % CR:    Crossover rate
 % MR:    Mutation rates
-%*Note: k-value of KNN & k-fold setting can be modified in jFitnessFunction.m
+%*Note: k-value of KNN & hold-out setting can be modified in jFitnessFunction.m
 %---Output-----------------------------------------------------------------
 % sFeat: Selected features (instances x features)
 % Sf:    Selected feature index

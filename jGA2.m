@@ -40,7 +40,7 @@ for i=1:N
 end
 CR=round(CR*N); 
 X1=zeros(CR,D); X2=zeros(CR,D); Fnew=zeros(1,2*CR); curve=inf; t=1;
-figure(1); clf; axis([1 100 0 0.3]); xlabel('Number of generations');
+figure(1); clf; axis([1 100 0 0.2]); xlabel('Number of generations');
 ylabel('Fitness Value'); title('Convergence Curve'); grid on;
 %---Generations start------------------------------------------------------
 while t <= T
