@@ -2,7 +2,7 @@
 
 function fitness=jFitnessFunction(feat,label,X,HO)
 if sum(X==1)==0
-  fitness=inf;
+  fitness=1;
 else
   fitness=jwrapperKNN(feat(:,X==1),label,HO);
 end
