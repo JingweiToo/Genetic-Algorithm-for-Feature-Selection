@@ -14,7 +14,6 @@
 % T:     Maximum number of generations
 % CR:    Crossover rate
 % MR:    Mutation rates
-%*Note: k-value of KNN & hold-out setting can be modified in jFitnessFunction.m
 %---Output-----------------------------------------------------------------
 % sFeat: Selected features (instances x features)
 % Sf:    Selected feature index
@@ -27,10 +26,14 @@
 clc, clear, close 
 % Benchmark data set 
 load ionosphere.mat; 
+% Set 20% data as validation set
+ho=0.2; 
+% Hold-out method
+HO=cvpartition(label,'HoldOut',ho,'Stratify',false);
 % Parameter setting
 N=10; T=100; CR=0.8; MR=0.3; 
 % Genetic Algorithm
-[sFeat,Sf,Nf,curve]=jGA1(feat,label,N,T,CR,MR); 
+[sFeat,Sf,Nf,curve]=jGA1(feat,label,N,T,CR,MR,HO); 
 % Plot convergence curve
 figure(); plot(1:T,curve); xlabel('Number of generations');
 ylabel('Fitness Value'); title('GA'); grid on;
@@ -40,10 +43,14 @@ ylabel('Fitness Value'); title('GA'); grid on;
 clc, clear, close 
 % Benchmark data set 
 load ionosphere.mat; 
+% Set 20% data as validation set
+ho=0.2; 
+% Hold-out method
+HO=cvpartition(label,'HoldOut',ho,'Stratify',false);
 % Parameter setting
 N=10; T=100; CR=0.6; MR=0.001; 
 % Genetic Algorithm
-[sFeat,Sf,Nf,curve]=jGA2(feat,label,N,T,CR,MR);
+[sFeat,Sf,Nf,curve]=jGA2(feat,label,N,T,CR,MR,HO);
 % Plot convergence curve
 figure(); plot(1:T,curve); xlabel('Number of generations');
 ylabel('Fitness Value'); title('GA'); grid on;
