@@ -46,7 +46,6 @@ plot(1:max_Iter,curve);
 xlabel('Number of generations');
 ylabel('Fitness Value'); 
 title('GA'); grid on;
-
 ```
 
 
@@ -77,5 +76,4 @@ title('GA'); grid on;
   year={2019},
   publisher={Multidisciplinary Digital Publishing Institute}
 }
-
 ```
