@@ -1,26 +1,30 @@
 # Genetic Algorithm for Feature Selection
 
+[![View  Genetic Algorithm for Feature Selection on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/78474-genetic-algorithm-for-feature-selection)
+[![License](https://img.shields.io/badge/license-BSD_3-yellow.svg)](https://github.com/JingweiToo/Genetic-Algorithm-for-Feature-Selection/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/badge/release-1.3-green.svg)](https://github.com/JingweiToo/Genetic-Algorithm-for-Feature-Selection)
+
 ![Wheel](https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/d889846e-2797-49a7-b4c7-e67a15d118ff/6d964ba3-4b56-4e84-949a-470f340c878c/images/1595387337.PNG)
 
 
 ## Introduction
 * Simple genetic algorithm ( GA ) for feature selection tasks, which can select the potential features to improve the classification accuracy. 
-* The < Main.m file > illustrates the example of how GA can solve the feature selection problem using a benchmark data-set. 
+* The `Main` file illustrates the example of how GA can solve the feature selection problem using a benchmark data-set. 
 
 ## Input
-* *feat*     : feature vector ( Instances *x* Features )
-* *label*    : label vector ( Instances *x* 1 )
-* *N*        : number of chromosomes
-* *max_Iter* : maximum number of generations
-* *CR*       : crossover rate
-* *MR*       : mutation rate
+* *`feat`*     : feature vector ( Instances *x* Features )
+* *`label`*    : label vector ( Instances *x* 1 )
+* *`N`*        : number of chromosomes
+* *`max_Iter`* : maximum number of generations
+* *`CR`*       : crossover rate
+* *`MR`*       : mutation rate
 
 
 ## Output
-* *sFeat*    : selected features
-* *Sf*       : selected feature index
-* *Nf*       : number of selected features
-* *curve*    : convergence curve
+* *`sFeat`*    : selected features
+* *`Sf`*       : selected feature index
+* *`Nf`*       : number of selected features
+* *`curve`*    : convergence curve
 
 
 ### Example
